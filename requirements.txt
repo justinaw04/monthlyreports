@@ -1,3 +1,4 @@
 Flask==2.3.3
-pandas==2.1.0
+pandas==1.5.3  # Older, more broadly compatible version
+numpy==1.23.5  # Pinning a compatible numpy version
 gunicorn==21.2.0
