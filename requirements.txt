@@ -1,6 +1,6 @@
 Flask==2.3.3
-pandas==2.2.0  # Updated to a version compatible with Python 3.13+
-numpy==1.26.0  # Updated to a version compatible with pandas 2.2.0 and Python 3.13+
+pandas==2.2.2  # Updated to the latest stable version for best 3.13 compatibility
+numpy==1.26.4  # Updated to the latest stable version for best 3.13 compatibility
 gunicorn==21.2.0
 setuptools==68.2.2
 wheel==0.41.2
