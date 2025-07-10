@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: csv-report-app
+    env: python
+    plan: free  # or 'starter', 'standard', etc. depending on your tier
+    region: oregon  # or use 'frankfurt' if you're in Europe
+    branch: main
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: PORT
+        value: 10000  # Render auto-assigns this, but it's good to be explicit for Flask
