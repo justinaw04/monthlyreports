@@ -8,7 +8,8 @@ import tempfile
 import shutil
 import datetime
 
-app = Flask(__name__)
+# Initialize Flask app, specifying the current directory as the template folder
+app = Flask(__name__, template_folder='.')
 # Set a secret key for flashing messages (can be any random string)
 app.secret_key = 'super_secret_key_for_flash_messages' 
 
@@ -121,5 +122,4 @@ def upload_file():
 if __name__ == '__main__':
     # When running locally, Flask will use a default port (e.g., 5000)
     # For Render, it will use the PORT environment variable
-    app.run(debug=True, host='0.0.0.0', port=os.environ.get('PORT', 5000))
-
+    app.run(debug=True, host='0.0.0.0', port=os.envir
