@@ -1,4 +1,6 @@
 Flask==2.3.3
-pandas==1.5.3  # Older, more broadly compatible version
+pandas==2.0.3  # Re-attempting with 2.0.3, as it's more recent than 1.5.3
 numpy==1.23.5  # Pinning a compatible numpy version
 gunicorn==21.2.0
+setuptools==68.2.2 # Explicitly add setuptools
+wheel==0.41.2    # Explicitly add wheel
