@@ -122,4 +122,4 @@ def upload_file():
 if __name__ == '__main__':
     # When running locally, Flask will use a default port (e.g., 5000)
     # For Render, it will use the PORT environment variable
-    app.run(debug=True, host='0.0.0.0', port=os.envir
+    app.run(debug=True, host='0.0.0.0', port=int(os.environ.get('PORT', 10000)))
